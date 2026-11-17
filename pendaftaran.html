@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Bakti Nusantara 666</title>
+    <link rel="stylesheet" href="style2.css">
+    
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>SMK BN 666</h2>
+        </div>
+        <nav>
+            <a href="#" onclick="showPage('beranda')">Beranda</a>
+            <a href="#" onclick="showPage('profil')">Profil</a>
+            <a href="#" onclick="showPage('pendaftaran')">Pendaftaran</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="beranda" class="page home">
+            <div class="home-content">
+                <p class="subtitle">SELAMAT DATANG DI</p>
+                <h1>SMK BAKTI NUSANTARA 666</h1>
+                <p>
+                    Sekolah Menengah Kejuruan yang mempersiapkan
+                    peserta didik agar memiliki keterampilan,
+                    pengetahuan, dan siap menghadapi dunia kerja.
+                </p>
+                <a href="#" class="btn" onclick="showPage('pendaftaran')">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </section>
+
+        <section id="profil" class="page profile" style="display:none;">
+            <div class="profile-card">
+                <div class="avatar-box">
+                    <img src="https://i.pravatar.cc/150?img=11" class="avatar" alt="Avatar">
+                </div>
+
+                <h2 class="name">abbymuhammad</h2>
+                <p class="email">vallr734@gmail.com</p>
+                <p class="password">epson33berry</p>
+
+                <p class="bio">
+                    Haloo saya abby, disini saya mendaftar di sekolah Bakti Nusantara 666,
+                    di bidang PPLG untuk mempelajari perangkat lunak. Salken yaa!!
+                </p>
+
+                <button class="btn-contact" onclick="showPage('pendaftaran')">Hubungi Saya</button>
+            </div>
+        </section>
+
+        <section id="pendaftaran" class="page registration" style="display:none;">
+            <div class="form-container">
+                <h1>Formulir Pendaftaran</h1>
+                <p class="description">
+                    Silakan isi data diri dengan lengkap dan benar.
+                </p>
+
+                <form class="custom-form" id="formPendaftaran" novalidate>
+
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+                        <small class="error-msg" id="err-nama"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Masukkan email">
+                        <small class="error-msg" id="err-email"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Maksimal 12 huruf">
+                        <small class="error-msg" id="err-password"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Lahir</label>
+                        <input type="date" id="tanggal">
+                        <small class="error-msg" id="err-tanggal"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin</label>
+                        <select id="gender">
+                            <option value="">Pilih jenis kelamin</option>
+                            <option>Laki-laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                        <small class="error-msg" id="err-gender"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jurusan">Pilihan Jurusan</label>
+                        <select id="jurusan">
+                            <option value="">Pilih jurusan</option>
+                            <option>PPLG</option>
+                            <option>DKV</option>
+                            <option>AKL</option>
+                        </select>
+                        <small class="error-msg" id="err-jurusan"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap</label>
+                        <textarea id="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+                        <small class="error-msg" id="err-alamat"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="minat">Minat & Keahlian</label>
+                        <textarea id="minat" placeholder="Tuliskan minat dan keahlian"></textarea>
+                        <small class="error-msg" id="err-minat"></small>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Daftar</button>
+                        <button type="reset" class="reset">Reset</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SMK Bakti Nusantara 666. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
